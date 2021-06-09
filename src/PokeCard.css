@@ -1,0 +1,22 @@
+.card {
+    display: block;
+    width: 150px;
+    background-color: white;
+    margin: 12px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+
+p {
+    background-color: lightgray;
+    padding: 4px;
+    text-align: center;
+    border-radius: 5px;
+    width: 126px;
+}

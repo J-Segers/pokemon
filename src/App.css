@@ -1,0 +1,45 @@
+body {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #ffcb05;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#poke-logo {
+    width: 500px;
+    height: 220px;
+    background-image: url("https://img.pngio.com/pokemon-logo-png-free-transparent-png-logos-pixelmon-png-1390_501.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.btn {
+    width: 150px;
+    height: 25px;
+    background-color: #3c5aa6;
+    color: #ffcb05;
+}
+
+.cards-container {
+    width: calc(750px + 5*24px);
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: black;
+}
