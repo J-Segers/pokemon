@@ -23,26 +23,23 @@ function App() {
     fetchPokemonList();
   }, [offSet])
 
-  return (
-      <div className={"container"}>
-          <header>
-              <div id={"poke-logo"}>
-                  <input type={"button"} className={"btn"} disabled={offSet === 0} value={"previous"} onClick={() => {setOffSet(offSet - 20)}} />
-                  <input type={"button"} className={"btn"} disabled={offSet === 1100} value={"next"} onClick={() => {setOffSet(offSet + 20)}} />
-              </div>
-          </header>
-
-
-        <div className={"cards-container"}>
-          {pokemonList && <div>
-            {pokemonList.map((pokemon) => {
-              return <PokeCard pokemonName={pokemon.name} pokemonUrl={pokemon.url}/>;
-            })}
-          </div>}
-
-        </div>
-      </div>
-  );
+    return (
+        <>
+            <header>
+                <div id={"poke-logo"}>
+                    <input type={"button"} className={"btn"} disabled={offSet === 0} value={"previous"} onClick={() => {setOffSet(offSet - 20)}} />
+                    <input type={"button"} className={"btn"} disabled={offSet === 1100} value={"next"} onClick={() => {setOffSet(offSet + 20)}} />
+                </div>
+            </header>
+            <div className={"cards-container"}>
+                {pokemonList && <>
+                    {pokemonList.map((pokemon) => {
+                        return <PokeCard pokemonName={pokemon.name} pokemonUrl={pokemon.url}/>;
+                    })}
+                </>}
+            </div>
+        </>
+    );
 }
 
 export default App;

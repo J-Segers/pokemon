@@ -1,19 +1,11 @@
 body {
-    width: 100vw;
     display: flex;
+    width: 100vw;
     justify-content: center;
     background-color: #ffcb05;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 header {
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,8 +30,10 @@ header {
 }
 
 .cards-container {
-    width: calc(750px + 5*24px);
     display: flex;
     flex-wrap: wrap;
-    box-shadow: black;
+    justify-content: space-around;
+    width: calc(1000px + 5*24px);
+    height: calc(1800px + 4*24px);
+    margin: 16px;
 }
